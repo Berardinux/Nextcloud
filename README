@@ -1,0 +1,42 @@
+# Nextcloud Docker Compose
+# This repository provides a Docker Compose configuration to quickly deploy Nextcloud, a self-hosted file sync and sharing platform, using Docker.
+
+# Prerequisites
+# Docker: Ensure that Docker is installed on your machine. You can download and install Docker from the official website: https://www.docker.com/
+# Getting Started
+# To get started with Nextcloud, follow the steps below:
+
+# Clone this repository to your local machine:
+
+# bash
+git clone https://github.com/your-username/nextcloud-docker-compose.git
+# Navigate to the project directory:
+
+# bash
+cd nextcloud-docker-compose
+# Customize the configuration:
+
+# Open the docker-compose.yml file and set your desired values for the MySQL passwords under the environment section.
+# Start the Nextcloud services:
+
+# bash
+docker-compose up -d
+
+# Access Nextcloud:
+
+# Nextcloud should now be running and accessible at http://localhost:80. You can log in with the default username "admin" and the password you specified in the docker-compose.yml file.
+# Data Persistence:
+
+# By default, Nextcloud data will be stored in a Docker volume to ensure persistence. If you want to change the storage location, modify the volumes section in the docker-compose.yml file.
+# Configuration
+# The docker-compose.yml file contains the following services:
+
+# nextcloud: The Nextcloud service that runs the Nextcloud application.
+# db: The MySQL service that provides the database backend for Nextcloud.
+# You can modify the configuration of these services in the docker-compose.yml file according to your requirements.
+
+# License
+# This project is licensed under the MIT License.
+
+# Contributing
+# Contributions are welcome! If you find any issues or want to enhance this project, please feel free to open an issue or submit a pull request.
